@@ -1,7 +1,7 @@
 var validator = require('../Validator/token');
 
 class routesValidator{
-    authenticate (req,res,next){
+    validateRoute (req,res,next){
         var token = req.body.token ||  req.headers['token'];
         if(token){
             validator.verifyToken(token).then(verified =>{
