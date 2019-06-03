@@ -1,6 +1,9 @@
-#hackerbayAPi
+##hackerbayAPi
+
 A Node.js micro service Api  which houses the implementation of login authentication , image thumbnail generation and jason patching .
+
 ## How it works
+
 * Firstly you have to navigate into the project folder and run the command below to install all dependencies
 
 ```
