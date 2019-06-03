@@ -1,4 +1,4 @@
-##hackerbayAPi
+# hackerbayAPi
 
 A Node.js micro service Api  which houses the implementation of login authentication , image thumbnail generation and jason patching .
 
