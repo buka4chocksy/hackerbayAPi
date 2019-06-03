@@ -62,6 +62,7 @@ npm run coverage
 * Jsonpatch: Used for making JSON patch request
 * node-thumbnail: Used for image thumbnail generation
 * Chai: Used for unit testing
+* nyc: Used for test coverage
 
 
 ## Author
