@@ -16,7 +16,6 @@ class imagethumbnail{
             concurrency:4
       }
      if(fs.existsSync(data.source)){
-         console.log('i reched here');
          thumbnail(data ,function (files, err, stdout, stderr){
            res.json({file:`imageFolder/`+file+data.suffix+ext})
        }).catch(err =>{
