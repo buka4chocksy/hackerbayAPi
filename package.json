@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./bin/www",
-    "test": "node ./node_modules/mocha/bin/mocha unitTests/unitTest.js --reporter spec"
+    "test": "node ./node_modules/mocha/bin/mocha unitTests/unitTest.js --reporter spec",
+    "coverage": "nyc --reporter=text node ./node_modules/mocha/bin/mocha unitTests/unitTest.js --reporter spec"
+
   },
   "author": "ochoko peter",
   "license": "ISC",
@@ -23,6 +25,7 @@
     "morgan": "^1.9.1",
     "node-thumbnail": "^0.15.0",
     "normalize-port": "^1.0.0",
+    "nyc": "^14.1.1",
     "supertest": "^4.0.2"
   }
 }
