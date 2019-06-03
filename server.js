@@ -7,10 +7,10 @@ var bodyParser = require('body-parser');
 require('dotenv').config();
 var userRouter = require('./routes/userRoutes');
 var cors = require('cors');
-
+var logger = require('logger');
 //middleware
 
-
+app.use(logger())
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended:false}));
