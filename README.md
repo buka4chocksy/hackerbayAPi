@@ -10,21 +10,21 @@ A Node.js micro service Api  which houses the implementation of login authentica
 npm install
 
 ```
-* After that you Create a .env file then add a jwt secret of your choice eg secrete=hackerbay
+* After that you Create a .env file then add a jwt secret of your choice eg secret = hackerbay
 
 
-### Login
+## Login
 
 In other to be logged in successfully , you need to provide a username and password via a POST request to the  following 
-url http://localhost:3000/user/login , on successful login , it would return a jsonwebtoken.
+url http://localhost:3000/user/login , on successful login , it would return a jsonwebtoken .
 
 
-### Accessing Protected routes
+## Accessing Protected routes
 
 To be able to access protected routes while making a POST , GET or PATCH request , you need to input the token gotten on login via header during any request to a protected route.
 
 
-### Making JSON patch request
+## Making JSON patch request
 
 In other to make a successful PATCH request you need to provide a token via header to the url http://localhost:3000/user/jsonpatch
 
@@ -35,7 +35,7 @@ In other to make a successful PATCH request you need to provide a token via head
 The json patching request accepts two parameters which has key : mydoc , value:'must be a JSON object'  and key:patch ,value:'must be a JSON object'
 
 
-### Thumbnail
+## Thumbnail
 
 To created  a thumbnail , you need to make a POST request with a token provided via header to the url http://localhost:3000/user/thumbnail. Also you need to provide an image url via the full image part with key : source and value :"image path " e.g key:"source" , value:"C:\Users\User\Desktop\hackeybayApi\thumbnail/index.jpg". this will created a thumbnail with width 50 and height 50.
 
