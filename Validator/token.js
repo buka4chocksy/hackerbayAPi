@@ -3,7 +3,6 @@ var secret = process.env.secret
 class Token{
      generateToken(data={}){
         return new Promise((resolve, reject)=>{
-            console.log('i am here');
             jwt.sign({...data},secret ,{expiresIn: '24hrs'}, function(err, token){
                 if(err){
                     reject(err);
